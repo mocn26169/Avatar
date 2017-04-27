@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <com.bourne.avatar.SelectableRoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/avatar"
+        android:layout_marginTop="100dp"
+        app:sriv_border_color="#FFFFFF"
+        app:sriv_border_width="1dip"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_height="100dp"
+        android:src="@mipmap/default_pic"
+        />
+
+    <ImageView
+        android:id="@+id/avatar2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/default_pic" />
+</LinearLayout>

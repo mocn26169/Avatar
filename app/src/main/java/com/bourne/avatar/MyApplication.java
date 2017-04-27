@@ -2,6 +2,8 @@ package com.bourne.avatar;
 
 import android.app.Application;
 
+import com.bourne.avatar.GalleryFinal.GlideImageLoader;
+
 import cn.finalteam.galleryfinal.CoreConfig;
 import cn.finalteam.galleryfinal.FunctionConfig;
 import cn.finalteam.galleryfinal.GalleryFinal;

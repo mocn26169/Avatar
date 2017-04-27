@@ -1,8 +1,9 @@
-package com.bourne.avatar;
+package com.bourne.avatar.GalleryFinal;
 
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
 
+import com.bourne.avatar.R;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.resource.drawable.GlideDrawable;
