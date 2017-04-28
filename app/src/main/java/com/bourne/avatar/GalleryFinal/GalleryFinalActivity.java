@@ -27,10 +27,11 @@ import cn.finalteam.galleryfinal.model.PhotoInfo;
 public class GalleryFinalActivity extends Activity implements View.OnClickListener {
 
     private final int REQUEST_CODE_CAMERA = 1000;
-//    private String url = "https://github.com/wasabeef/awesome-android-ui/raw/master/art/android-anyshape.jpg";
+    private final int REQUEST_CODE_GALLERY = 1001;
+    private final int REQUEST_CODE_CROP = 1002;
+    private final int REQUEST_CODE_EDIT = 1003;
     private String url = "https://github.com/wasabeef/awesome-android-ui/raw/master/art/Android-MonthCalendarWidget.png";
     private SelectableRoundedImageView avatar;
-    private ImageView avatar2;
 
     private FunctionConfig functionConfig;
 
@@ -69,7 +70,17 @@ public class GalleryFinalActivity extends Activity implements View.OnClickListen
                                     new OnSheetItemClickListener() {
                                         @Override
                                         public void onClick(int which) {
-
+                                            // GalleryFinal.openGallerySingle(REQUEST_CODE_GALLERY, mOnHanlderResultCallback);
+                                            //带配置
+                                            functionConfig = new FunctionConfig.Builder()
+                                                    .setEnableCamera(false)
+                                                    .setEnableEdit(false)
+                                                    .setEnableCrop(true)
+                                                    .setEnableRotate(true)
+                                                    .setCropSquare(true)
+                                                    .setEnablePreview(true)
+                                                    .build();
+                                            GalleryFinal.openGallerySingle(REQUEST_CODE_GALLERY, functionConfig, mOnHanlderResultCallback);
                                         }
                                     })
                             .addSheetItem("拍照", SheetItemColor.Blue,

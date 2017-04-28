@@ -80,7 +80,7 @@ public class MyApplication extends Application {
         //配置功能
         FunctionConfig functionConfig = new FunctionConfig.Builder()
                 .setEnableCamera(true)
-                .setEnableEdit(true)
+                .setEnableEdit(false)
                 .setEnableCrop(true)
                 .setEnableRotate(true)
                 .setCropSquare(true)
