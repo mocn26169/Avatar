@@ -145,7 +145,7 @@ public class GalleryFinalActivity extends Activity implements View.OnClickListen
                         .asBitmap()
 //                        .load("https://ss0.baidu.com/73t1bjeh1BF3odCf/it/u=2561733620,2304282159&fm=85&s=E71450848ABEFCCE643AA8800300308C")
 //                        .centerCrop()
-                        .placeholder(R.mipmap.ic_launcher)
+                        .placeholder(R.mipmap.default_placeholder)
 //                        .crossFade()
                         .into(avatar);
             }

@@ -83,7 +83,7 @@ public class BrowsePictureActivity extends AppCompatActivity {
      * 启动图片下载线程
      */
     private void onDownLoad(String url) {
-        ProgressUtils.showCircle(BrowsePictureActivity.this, null, "正在保存，请耐心等候......");
+        ProgressUtils.show(BrowsePictureActivity.this, null, "正在保存，请耐心等候......");
         DownLoadImageService service = new DownLoadImageService(getApplicationContext(),
                 url,
                 new ImageDownLoadCallBack() {
